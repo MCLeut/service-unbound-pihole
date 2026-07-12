@@ -1,0 +1,34 @@
+{
+  "$schema": "https://repomix.com/schemas/latest/schema.json",
+  "output": {
+    "filePath": ".repomix/repomix-output.xml",
+    "style": "xml",
+    "parsableStyle": true,
+    "compress": false,
+    "fileSummary": true,
+    "directoryStructure": true,
+    "removeComments": false,
+    "removeEmptyLines": true,
+    "showLineNumbers": true,
+    "topFilesLength": 20,
+    "includeEmptyDirectories": false,
+    "git": { "sortByChanges": true, "sortByChangesMaxCommits": 100 }
+  },
+  "include": [],
+  "ignore": {
+    "useGitignore": true,
+    "useDefaultPatterns": true,
+    "customPatterns": [
+      "*.min.*", "**/*.min.js", "**/*.min.css", "**/*.min.mjs",
+      "**/*.map", "**/*.lock", "**/*.snap",
+      "**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.svg", "**/*.webp", "**/*.avif", "**/*.ico", "**/*.bmp",
+      "**/*.pdf", "**/*.mp4", "**/*.webm", "**/*.mp3",
+      "**/*.woff", "**/*.woff2", "**/*.ttf", "**/*.otf", "**/*.eot",
+      "**/*.csv", "**/*.parquet", "**/*.zip", "**/*.tar.gz",
+      "**/dist/**", "**/build/**", "**/coverage/**", "**/__generated__/**",
+      "**/vendor/**", "**/vendor.orig/**"
+    ]
+  },
+  "security": { "enableSecurityCheck": true },
+  "tokenCount": { "encoding": "o200k_base" }
+}

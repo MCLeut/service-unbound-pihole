@@ -1,0 +1,28 @@
+# .serena/project.yml — getrimmt auf Speed + Signal (Serena v1.5.3)
+project_name: "service-unbound-pihole"
+languages: ["bash", "powershell"]
+encoding: "utf-8"
+
+# nichts Ignoriertes indexieren -> schneller, weniger Rauschen
+ignore_all_files_in_gitignore: true
+
+# zusätzlich zur .gitignore (Vendor/Generiertes/Binär-nahes raus)
+ignored_paths:
+  - "**/node_modules/**"
+  - "**/dist/**"
+  - "**/build/**"
+  - "**/.next/**"
+  - "**/.venv/**"
+  - "**/vendor/**"
+  - "**/__generated__/**"
+  - "**/coverage/**"
+  - "**/*.min.*"
+  - "**/*.map"
+  - "**/*.lock"
+  - "**/*.snap"
+  - "**/*.csv"
+  - "**/*.parquet"
+  - ".repomix/**"
+
+# Serena darf editieren/refactoren
+read_only: false

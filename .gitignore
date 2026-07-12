@@ -1,0 +1,6 @@
+
+# Serena / Repomix - Caches & Outputs (nicht versionieren)
+.serena/cache/
+.serena/logs/
+.repomix/
+repomix-output.*
